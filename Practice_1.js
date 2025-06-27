@@ -32,12 +32,11 @@ function sumOfNum(a, b) {
 
 sumOfNum(5, 5);
 sumOfNum(123, 234);
-sumOfNum(-1, 2)
-sumOfNum(-2, -2)
-sumOfNum(3, 0)
-sumOfNum(1.3, 2)
-sumOfNum(1.5, 1.5)
-
+sumOfNum(-1, 2);
+sumOfNum(-2, -2);
+sumOfNum(3, 0);
+sumOfNum(1.3, 2);
+sumOfNum(1.5, 1.5);
 
 /*
 Problem statement 3
@@ -47,20 +46,19 @@ rectangle given its lenght and width
 */
 
 function areaOfRectangle(length, width) {
-    //Validation
-    if (length <= 0) {
-        throw new RangeError(`Length Should be a positive number`);
-    }
-    if (width <= 0) {
-        throw new RangeError(`Width should be a positive number`)
-    }
+  //Validation
+  if (length <= 0) {
+    throw new RangeError(`Length Should be a positive number`);
+  }
+  if (width <= 0) {
+    throw new RangeError(`Width should be a positive number`);
+  }
 
-    
-    const areaOfRectangle = length * width;
-    console.log(`The area of rectangle is ${areaOfRectangle}`)
+  const areaOfRectangle = length * width;
+  console.log(`The area of rectangle is ${areaOfRectangle}`);
 }
 
-areaOfRectangle(10,30)
+areaOfRectangle(10, 30);
 // areaOfRectangle(-20, -40)
 // areaOfRectangle(-10, 10)
 // areaOfRectangle(50.10, 20.10)

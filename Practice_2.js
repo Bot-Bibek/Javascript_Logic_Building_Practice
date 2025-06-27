@@ -45,3 +45,5 @@ console.log(smallNum(3, 3, 1));
 console.log(smallNum(3, 3, 4));
 console.log(smallNum("w", "w", "w"));
 console.log(smallNum("3", "3", "3"));
+
+
