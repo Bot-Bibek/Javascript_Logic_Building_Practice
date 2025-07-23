@@ -8,8 +8,12 @@
 
 function factorial(num) {
   if (num < 0) {
-    console.log("Please enter the positive value")
-    return
+
+    throw new Error("The number should be greater the 0")
+  }
+  if (typeof num !== "number") {
+    throw new Error("The input should be a number not string")
+    
   }
 
   let fact = 1
@@ -19,4 +23,4 @@ function factorial(num) {
   console.log(`Factorial of ${num} is ${fact}`)
 }
 
-factorial(-5)
+factorial("Hello")
