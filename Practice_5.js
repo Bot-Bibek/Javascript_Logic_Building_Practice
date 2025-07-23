@@ -11,7 +11,7 @@
  * Ignoring the exception of 1700, 1800 and 1900
  */
 
-function YearChecker(year) {
+const YearChecker = (year) => {
   if (year < 0) {
     throw new Error(`The provided number should be in positive`)
   }
@@ -28,5 +28,5 @@ function YearChecker(year) {
 
 // console.log(YearChecker("Hello"))
 // console.log(YearChecker(-1))
-console.log(YearChecker(2000))
+console.log(YearChecker(2010))
 console.log(YearChecker(2005))
