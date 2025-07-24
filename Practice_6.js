@@ -6,6 +6,9 @@
  */
 
 const SumOfDigit = (num) => {
+  if (typeof num !== "number" || num < 0) {
+    throw new Error("The provided num is not integer or not positive value")
+  }
   let sum = 0;
   while (num !== 0) {
     let last = num % 10;
@@ -18,4 +21,4 @@ const SumOfDigit = (num) => {
   
 }
 
-console.log(SumOfDigit(1010))
+console.log(SumOfDigit(111))
