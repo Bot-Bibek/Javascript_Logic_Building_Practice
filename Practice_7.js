@@ -6,16 +6,16 @@
  * Return: Nothing
  */
 
-function table(tableOf) {
+function table(tableOf, tableTill) {
   var tableOf;
   if (typeof tableOf !== "number" || tableOf < 0) {
     throw new Error("The input value must be in number or positive")
   
 }
-  for (let i = 1; i <= 10; ++i){
+  for (let i = 1; i <= tableTill; ++i){
     console.log(`${tableOf} * ${i} = ${tableOf * i}`)
   }
 
-  return 0;
+  
 }
-table(200)
+table(5, 10)
